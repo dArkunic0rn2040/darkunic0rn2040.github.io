@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meeneedi's Think Tank</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&family=VT323&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+
+<!-- NAV -->
+<nav>
+  <div class="inner">
+    <div class="nav-logo"><span>~/</span>meeneedi<span>/</span>think-tank</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#posts">Posts</a></li>
+      <li><a href="https://github.com/darkunic0rn2040" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-prefix">// initialising knowledge base...</div>
+    <h1 class="glitch" data-text="MEENEEDI'S THINK TANK">
+      MEENEEDI'S<br/><span class="dim">THINK TANK</span>
+    </h1>
+    <p class="hero-sub">
+      Using this mainly for <span class="highlight">cyber write-ups</span>, tooling notes,
+      <span class="highlight">CTF walkthroughs</span>, and a bit of self ranting...
+    </p>
+    <div class="hero-actions">
+      <a href="#posts" class="btn">Read Posts</a>
+    </div>
+    <div class="hero-status">
+      <div class="status-item">
+        <span class="status-label">Status</span>
+        <span class="status-value" style="color:var(--green)">ONLINE<span class="cursor"></span></span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Focus</span>
+        <span class="status-value" style="font-size:1.2rem; color:var(--text)">CyberSec</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TERMINAL -->
+  <div class="terminal">
+    <div class="terminal-bar">
+      <div class="dot dot-r"></div>
+      <div class="dot dot-y"></div>
+      <div class="dot dot-g"></div>
+    </div>
+    <div><span class="t-prompt">meeneedi@think-tank:~$</span> <span class="t-cmd">ls ./knowledge-base/</span></div>
+    <div class="t-out">write-ups/  ctf/  tooling/  rants/  blog/</div>
+    <div><span class="t-prompt">meeneedi@think-tank:~$</span> <span class="t-cmd">cat ./blog/knowledge-base-setup.md</span></div>
+    <div class="t-out">--- How to Build a Cybersecurity Knowledge Base ---</div>
+    <div class="t-out">Rendering post...<span class="cursor"></span></div>
+    <div class="t-comment"># cyber write-ups. ctf walkthroughs. tooling. the occasional rant.</div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-tag">// about this space</div>
+    <div class="section-title">WHAT IS THIS?</div>
+    <p class="section-desc">A personal space to dump thoughts, document findings, and share things worth remembering.</p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="card-icon">></div>
+        <div class="card-title">Cyber Write-Ups</div>
+        <div class="card-text">Breaking down vulnerabilities, attack techniques, and defensive concepts — written to be understood, not just referenced.</div>
+      </div>
+      <div class="about-card">
+        <div class="card-icon">#</div>
+        <div class="card-title">CTF Walkthroughs</div>
+        <div class="card-text">Step-by-step solutions from capture-the-flag competitions. The wins, the rabbit holes, and everything in between.</div>
+      </div>
+      <div class="about-card">
+        <div class="card-icon">$</div>
+        <div class="card-title">Tooling Notes</div>
+        <div class="card-text">Practical notes on tools, commands, and workflows. The stuff you'll want when you're deep in an engagement.</div>
+      </div>
+      <div class="about-card">
+        <div class="card-icon">!</div>
+        <div class="card-title">The Occasional Rant</div>
+        <div class="card-text">Opinions, observations, and unsolicited thoughts from someone who spends too much time thinking about this stuff.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSTS -->
+  <section id="posts">
+    <div class="section-tag">// knowledge base</div>
+    <div class="section-title">WRITE-UPS</div>
+    <p class="section-desc">Field notes, tooling deep-dives, and security concepts — written to be referenced, not forgotten.</p>
+
+    <div class="post-list">
+      <a href="rant-01.html" class="post-item">
+        <span class="post-date">2026-03-14</span>
+        <span class="post-title">Nobody Actually Reads the Security Policy</span>
+        <span class="post-tag">Rant</span>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-date">coming soon</span>
+        <span class="post-title">My Go-To CTF Recon Methodology</span>
+        <span class="post-tag">CTF</span>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-date">coming soon</span>
+        <span class="post-title">My Threat Intelligence Workflow</span>
+        <span class="post-tag">Threat Intel</span>
+      </a>
+      <a href="#" class="post-item">
+        <span class="post-date">coming soon</span>
+        <span class="post-title">CVE Triage: How I Track and Prioritise Vulnerabilities</span>
+        <span class="post-tag">Methodology</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <strong>MEENEEDI'S THINK TANK</strong> &mdash; Cybersecurity &amp; CTF<br/>
+        Hosted on GitHub Pages.
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/darkunic0rn2040" target="_blank">GitHub</a>
+        <a href="#posts">Posts</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/matrix.js"></script>
+</body>
+</html>
